@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier « Initiation à l’accessibilité » - Page d’accueil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <table id="table1" class="bg-primary-subtle" style="width:100%">
+    <tr>
+      <td class="p-1"><img src="img/Disability_symbols.svg" style="width:3em" /></td>
+      <td class="h2 p-1">Atelier « Initiation à l’accessibilité »</td>
+    </tr>
+  </table>
+  <div class="container">
+    <div class="card mt-2">
+      <div class="card-header">
+        <h2 class="card-title">L’accessibilité numérique</h2>
+      </div>
+      <div class="card-body">
+        <img src="img/image.png" style="width:30em">
+        <p><a href="https://accessibilite.numerique.gouv.fr/">Cliquez ici</a> pour en savoir plus.</p>
+      </div>
+    </div>
+
+    <div class="card mt-2">
+      <div class="card-header">
+        <h4>Quelques chiffres</h4>
+      </div>
+      <div class="card-body">
+        <table id="table2" class="table">
+          <tr>
+            <td><b>Donnée</b></td>
+            <td><b>Description</b></td>
+          </tr>
+          <tr>
+            <td class="h3"> 48 % </td>
+            <td>Part des Français qui éprouvent au moins une forme de difficulté qui les empêche d’utiliser pleinement les outils numériques et Internet (+ 13 points par rapport à 2020). La complète maîtrise des outils numériques reste le premier frein à la pleine utilisation du numérique (25 %, + 7 points par rapport à 2020).</td>
+          </tr>
+          <tr>
+            <td class="h3"> 54 % </td>
+            <td>Part de personnes ayant au moins parfois des difficultés à effectuer des démarches administratives en ligne. Cette part est en forte hausse depuis 2020, + 16 points.</td>
+          </tr>
+        </table>
+        <p class="text-end">Source : <a href="https://www.economie.gouv.fr/restitution-barometre-numerique-2022">Le baromètre du numérique 2022</a></p>
+      </div>
+    </div>
+
+    <div class="card mt-2">
+      <div class="card-header">
+        <h4>Donnez votre avis</h4>
+      </div>
+      <div class="card-body">
+        <form onsubmit="return false">
+          <div class="form-label">Que pensez-vous de cet atelier ?</div>
+          <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" name="avis">
+            <div class="form-check-label">J’adore cet atelier</div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" name="avis">
+            <div class="form-check-label">Cet atelier est formidable</div>
+          </div>
+          <hr>
+          <div class="mb-3">
+            <div class="form-label">Votre courriel :</div>
+            <input class="form-control" type="text">
+            <div class="form-text">We’ll never share your email with anyone else.</div>
+          </div>
+          <button class="btn btn-primary" onclick="alert('Merci pour votre avis !')">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
