@@ -1,7 +1,28 @@
-body{
+/**
+ * [Atelier A11y styles]
+ */
 
+:root, [data-bs-theme=light] {
+  --bs-link-color-rgb: 102, 110, 255;
 }
 
-td {
-    text-align: justify;
+.table .pourcent {
+  font-family: monospace;
+  color: #8A90FF;
+}
+
+.desc {
+  text-align: justify;
+}
+
+.btn-primary{
+  --bs-btn-bg: #568BFF;
+  --bs-btn-border-color: #568BFF;
+  color: #FFF;
+}
+
+.card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

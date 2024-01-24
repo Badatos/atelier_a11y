@@ -5,45 +5,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Atelier « Initiation à l’accessibilité » - Page d’accueil</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
   <table id="table1" class="bg-primary-subtle" style="width:100%">
     <tr>
-      <td class="p-1"><img src="img/Disability_symbols.svg" style="width:3em" /></td>
+      <td class="p-1"><img src="img/Disability_symbols.svg" style="width:3em"></td>
       <td class="h2 p-1">Atelier « Initiation à l’accessibilité »</td>
     </tr>
   </table>
   <div class="container">
     <div class="card mt-2">
       <div class="card-header">
-        <h2 class="card-title">L’accessibilité numérique</h2>
+        <h2 class="card-title">
+          <i class="bi bi-universal-access-circle"></i>
+          L’accessibilité numérique
+        </h2>
+        <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#card1">
+          <i class="bi bi-arrow-down-up"></i>
+        </a>
       </div>
-      <div class="card-body">
+      <div class="card-body collapse show" id="card1">
         <img src="img/image.png" style="width:30em">
-        <p><a href="https://accessibilite.numerique.gouv.fr/">Cliquez ici</a> pour en savoir plus.</p>
+        <p><a href="https://accessibilite.numerique.gouv.fr/" target="_blank">Cliquez ici</a> pour en savoir plus.</p>
       </div>
     </div>
 
     <div class="card mt-2">
       <div class="card-header">
-        <h4>Quelques chiffres</h4>
+        <h4>
+          <i class="bi bi-calculator"></i>
+          Quelques chiffres
+        </h4>
+        <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#card2">
+          <i class="bi bi-arrow-down-up"></i>
+        </a>
       </div>
-      <div class="card-body">
+      <div class="card-body collapse show" id="card2">
+        Ci-dessous quelques données à propos des personnes éprouvant des difficultés sur Internet.
         <table id="table2" class="table">
           <tr>
-            <td><b>Donnée</b></td>
+            <th>Donnée</th>
             <td><b>Description</b></td>
           </tr>
           <tr>
-            <td class="h3"> 48 % </td>
-            <td>Part des Français qui éprouvent au moins une forme de difficulté qui les empêche d’utiliser pleinement les outils numériques et Internet (+ 13 points par rapport à 2020). La complète maîtrise des outils numériques reste le premier frein à la pleine utilisation du numérique (25 %, + 7 points par rapport à 2020).</td>
+            <td class="h3 pourcent"> 48 % </td>
+            <td class="desc">Part des Français qui éprouvent au moins une forme de difficulté qui les empêche d’utiliser pleinement les outils numériques et Internet (+ 13 points par rapport à 2020). La complète maîtrise des outils numériques reste le premier frein à la pleine utilisation du numérique (25 %, + 7 points par rapport à 2020).</td>
           </tr>
           <tr>
-            <td class="h3"> 54 % </td>
-            <td>Part de personnes ayant au moins parfois des difficultés à effectuer des démarches administratives en ligne. Cette part est en forte hausse depuis 2020, + 16 points.</td>
+            <td class="h3 pourcent"> 54 % </td>
+            <td class="desc">Part de personnes ayant au moins parfois des difficultés à effectuer des démarches administratives en ligne. Cette part est en forte hausse depuis 2020, + 16 points.</td>
           </tr>
         </table>
         <p class="text-end">Source : <a href="https://www.economie.gouv.fr/restitution-barometre-numerique-2022">Le baromètre du numérique 2022</a></p>
@@ -52,9 +68,15 @@
 
     <div class="card mt-2">
       <div class="card-header">
-        <h4>Donnez votre avis</h4>
+        <h4>
+          <i class="bi bi-chat-left-dots"></i>
+          Donnez votre avis
+        </h4>
+        <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#card3">
+          <i class="bi bi-arrow-down-up"></i>
+        </a>
       </div>
-      <div class="card-body">
+      <div class="card-body collapse show" id="card3">
         <form onsubmit="return false">
           <div class="form-label">Que pensez-vous de cet atelier ?</div>
           <div class="mb-3 form-check">
@@ -76,5 +98,12 @@
       </div>
     </div>
   </div>
+
+  <div class="p-4 py-md-5 mt-5 bg-body-tertiary text-end">
+    Olivier Bado-Faustin,<br>
+    <img src="https://pod.univ-cotedazur.fr/static/custom/img/UCAlogoQlarge_marianne.svg" style="width: 10em">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
